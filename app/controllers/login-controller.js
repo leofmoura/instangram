@@ -17,6 +17,7 @@
                 if (error) {
                     console.log("Falha no login!!", error);
                 }else{
+                    console.log(authData);
                     $rootScope.user = {
                         name: authData.facebook.displayName,
                         email: authData.facebook.email,
